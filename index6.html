@@ -75,19 +75,18 @@
       </button>
     </section>
     <script>
-        function userLanguage() {
-        let country = prompt( "What country are you from?" )
+        function askForCountry() {
+            let country = prompt("What country are you from?").toLowerCase();
+    
+            if (country === "brazil" || country === "portugal") {
+                alert("You speak Portuguese");
+            } else {
+                alert("Go learn Portuguese!");
+            }
+        }    
+        // Call the function
+        askForCountry();
+    </script>   
 
-        if (country === "Brazil" || country === "Portugal"){
-            alert("You speak Portuguese")
-        } else {
-            alert("You don't speak Portuguese")
-        }
-      }
-
-      userLanguage();
-       
-
-    </script>
   </body>
 </html>
