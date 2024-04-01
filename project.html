@@ -80,8 +80,8 @@
     <p>
         And tragically, the average eater has not undergone a 
         food safety course on how to cook and consume all the 
-        things without getting violently ill (or worse). For 
-        animal proteins (i.e. meat), the CliffsNotes version is 
+        things without getting violently ill (or worse). <strong>For 
+            animal proteins (i.e. meat),</strong> the CliffsNotes version is 
         to cook them thoroughly and to keep raw produce away from 
         raw meat, particularly chicken, which poses unique risks 
         when left out at room temperature, even when it is fully 
@@ -95,5 +95,15 @@
         <a href="https://my-portfolio-michal379.vercel.app/" target="_blank">Michal Khakayi</a>
 
     </p> 
+    <script>
+        document.querySelector('.btn').addEventListener('click', function() {
+          let name = prompt('What is your name?');
+          if (name.length) {
+            alert('Thanks, ' + name + ' , we will be in touch. Meanwhile, have a lot of Yogurt!')
+          } else {
+            alert('No name, no Greek Yogurt for you!')
+          }
+        });
+      </script>
 </body>
 </html>
